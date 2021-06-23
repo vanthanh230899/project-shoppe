@@ -1,0 +1,145 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --primary-color: #FE6332;
+    --border-color: #eeebeb;
+    --height-header: 120px;
+    --height-navbar: 36px;
+    --height-search: calc(var(--height-header) - var(--height-navbar));
+    --height-sort-bar: 40px;
+}
+
+*{
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+    
+}
+
+.gird-full-width{
+    width: 100%;
+}
+
+.grid-row{
+    display: flex;
+    margin: 0 -10px;
+    flex-wrap: wrap;
+}
+
+.grid-column-2{
+    width: 16.6667%;
+    padding: 0 10px;
+}
+
+.grid-column-2-5{
+    width: 20%;
+    padding: 0 10px;
+    
+}
+
+.grid-column-10{
+    width: 83.3333%;
+    padding: 0 10px;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0.1;
+    }to{
+        opacity: 1;
+    }
+}
+
+@keyframes enlarge{
+    from{
+        transform: scale(0.1);
+        opacity: 0.1;
+    }to{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.overlay{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.modal-body{
+    z-index: 2;
+    margin: auto;
+    background-color: var(--white-color);
+    width: 500px;
+    border-radius: 2px;
+}
+
+.pagination-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 570px;
+    margin: auto;
+    list-style: none;
+    padding: 0;
+}
+
+
+
+.pagination-number{
+    display: block;
+    font-size: 2rem;
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 300;
+    line-height: 30px;
+    height: 30px;
+    min-width: 40px;
+    text-align: center;
+    border-radius: 2px;
+}
+
+.pagination-icon{
+    font-size: 1.6rem;
+    color: #666;
+    position: relative;
+}
+
+
+.active .pagination-number{
+    background-color: #EE4D2D;
+    color: #fff;
+}
+
+.active .pagination-number:hover{
+    background-color: #f0755d;
+}
+
+
+
+
+
+
+
